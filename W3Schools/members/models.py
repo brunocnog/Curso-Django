@@ -8,7 +8,7 @@ class Member(models.Model):
     birth_date = models.DateField(blank=True, null=True, verbose_name='Data de Nascimento')
     gender = models.CharField(
         max_length=1,
-        choices=[('M', 'Masculino'), ('F', 'Feminino'), ('O', 'Outro')],
+        choices=[('M', 'Masculino'), ('F', 'Feminino')],
         blank=True,
         null=True,
         verbose_name='Gênero'
