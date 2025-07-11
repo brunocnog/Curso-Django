@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes dos Membros</title>
+</head>
+<body>
+
+    <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+  
+    <p>Telefone: {{ mymember.phone }}</p>
+    <p>Sexo: {{ mymember.get_gender_display }}</p>
+    <p>Data de Aniverário: {{ mymember.birth_date }}</p>    
+    <p>Membro desde: {{ mymember.joined_date }}</p>
+
+    <hr>
+
+    <p>Volte para <a href="/members">Membros</a></p>
+
+</body>
+</html>

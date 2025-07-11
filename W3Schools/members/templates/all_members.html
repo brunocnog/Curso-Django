@@ -6,11 +6,11 @@
     <title>Membros do Clube</title>
 </head>
 <body>
-    <h1>Members</h1>
+    <h1>Membros</h1>
   
     <ul>
         {% for x in mymembers %}
-            <li>{{ x.firstname }} {{ x.lastname }}</li>
+            <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
         {% endfor %}
     </ul>
 </body>
