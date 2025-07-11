@@ -9,7 +9,10 @@ Clube Django
 
   <h1>Clube Django</h1>
 
-  <h3>Membros</h3>
+  <!-- Aprendendo a como criar uma variável direto no template -->
+  {% with x="Membros" %}
+  <h3> {{ x }} </h3>
+  {% endwith %}
   
   <p>Veja que faz para to clube em <a href="members/">Membros</a></p>
   
