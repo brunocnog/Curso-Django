@@ -5,15 +5,27 @@
 {% endblock %}
 
 {% block content %}
-  <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+  <!-- <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
   
-  <p>Telefone: {{ mymember.phone }}</p>
+    <p>Telefone: {{ mymember.phone }}</p>
     <p>Sexo: {{ mymember.get_gender_display }}</p>
     <p>Data de Aniverário: {{ mymember.birth_date }}</p>    
-    <p>Membro desde: {{ mymember.joined_date }}</p>
+    <p>Membro desde: {{ mymember.created_at }}</p>
 
-    <hr>
+    <hr> -->
+
+  <div class="mycard">
+    <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+    
+    <p>Telefone: {{ mymember.phone }}</p>
+    <p>Sexo: {{ mymember.get_gender_display }}</p>
+    <p>Data de Aniverário: {{ mymember.birth_date }}</p>    
+    <p>Membro desde: {{ mymember.created_at }}</p>
 
     <p>Volte para <a href="/members">Membros</a></p>
+  
+  </div>
+
+    
   
 {% endblock %}

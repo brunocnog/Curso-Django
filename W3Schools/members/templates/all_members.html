@@ -7,7 +7,7 @@
 
 {% block content %}
 
-    <p><a href="/">Página Principal</a></p>
+    <!-- <p><a href="/">Página Principal</a></p>
     <hr>
 
   <h1>Membros</h1>
@@ -16,5 +16,14 @@
     {% for x in mymembers %}
       <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
     {% endfor %}
-  </ul>
+  </ul> -->
+
+  <div class="mycard">
+    <h1>Membros</h1>
+    <ul>
+      {% for x in mymembers %}
+        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock %}
