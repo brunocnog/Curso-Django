@@ -22,7 +22,7 @@
     <h1>Membros</h1>
     <ul>
       {% for x in mymembers %}
-        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
+        <li onclick="window.location = 'details/{{ x.slug }}'">{{ x.firstname }} {{ x.lastname }}</li>
       {% endfor %}
     </ul>
   </div>

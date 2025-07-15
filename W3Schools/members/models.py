@@ -18,6 +18,7 @@ class Member(models.Model):
     is_active = models.BooleanField(default=True, verbose_name='Ativo')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Criado em')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Atualizado em')
+    slug = models.SlugField(default="", null=False)
 
     class Meta:
         ordering = ['firstname']
