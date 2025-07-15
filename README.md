@@ -73,7 +73,7 @@ Este repositório conterá:
 
 | Projeto         | Descrição                                               | Link              |
 |-----------------|---------------------------------------------------------|-------------------|
-| Projeto Piloto  | Primeiro projeto Django seguindo passo a passo do curso| *(em construção)* |
+| Projeto Piloto  | Primeiro projeto Django seguindo passo a passo do curso| ![W3Schools](./W3Schools/) |
 
 ---
 
