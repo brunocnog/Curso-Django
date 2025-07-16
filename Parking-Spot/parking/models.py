@@ -34,7 +34,7 @@ class ParkingRecord(models.Model):
     parking_spot = models.ForeignKey(
         ParkingSpot,
         on_delete=models.PROTECT,
-        related_name='parking_records', verbose_name='Veículo',
+        related_name='parking_records', verbose_name='Vaga',
     )
     entry_time = models.DateTimeField(
         auto_now_add=True, verbose_name='Horário de Entrada',
@@ -51,7 +51,7 @@ class ParkingRecord(models.Model):
 
     class Meta:
         verbose_name = 'Registro'
-        verbose_name_plural = 'Registro'
+        verbose_name_plural = 'Registros'
 
     def __str__(self):
         return f'{self.vehicle} - {self.parking_spot} - {self.entry_time}'
