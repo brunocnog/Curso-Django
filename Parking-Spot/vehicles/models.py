@@ -24,7 +24,7 @@ class Vehicle(models.Model):
     owner = models.ForeignKey(
         Customer,
         on_delete=models.PROTECT,
-        black=True, null=True,
+        blank=True, null=True,
         related_name='vehicles', verbose_name='Proprietário',
     )
     license_plate = models.CharField(
