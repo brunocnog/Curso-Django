@@ -120,6 +120,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Aqui são adicionados meus arquivos estáticos (imagens, vídeos, etc)
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
+# Aqui são os arquivo estáticos do próprio Django
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
@@ -140,10 +146,10 @@ JAZZMIN_SETTINGS = {
     ############
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    # "site_logo": "books/img/logo.png",
+    "site_logo": "images/site_logo.svg",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    # "login_logo": None,
+    "login_logo": 'images/login_logo.svg',
 
     # Logo to use for login form in dark themes (defaults to login_logo)
     # "login_logo_dark": None,
@@ -152,7 +158,7 @@ JAZZMIN_SETTINGS = {
     # "site_logo_classes": "img-circle",
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    # "site_icon": None,
+    "site_icon": 'images/site_icon.svg', 
 
     # Welcome text on the login screen
     "welcome_sign": "Parking Service - Estacionamento Inteligênte",
