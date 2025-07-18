@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'jazzmin',
-    
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-
+    'rest_framework_simplejwt',
+    
+    'authentication',
     'customers',
     'vehicles',
     'parking'
@@ -162,7 +164,7 @@ JAZZMIN_SETTINGS = {
     # "site_logo_classes": "img-circle",
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon": 'images/site_icon.svg', 
+    "site_icon": 'images/site_icon.svg',
 
     # Welcome text on the login screen
     "welcome_sign": "Parking Service - Estacionamento Inteligênte",
@@ -177,7 +179,7 @@ JAZZMIN_SETTINGS = {
     # Field name on user model that contains avatar ImageField/URLField/Charfield or a callable that receives the user
     # "user_avatar": None,
 
-     ############
+    ############
     # Top Menu #
     ############
 
@@ -229,8 +231,8 @@ JAZZMIN_SETTINGS = {
     # # Custom links to append to app groups, keyed on app name
     # "custom_links": {
     #     "books": [{
-    #         "name": "Make Messages", 
-    #         "url": "make_messages", 
+    #         "name": "Make Messages",
+    #         "url": "make_messages",
     #         "icon": "fas fa-comments",
     #         "permissions": ["books.view_book"]
     #     }]
@@ -284,4 +286,13 @@ JAZZMIN_SETTINGS = {
     # "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
     # Add a language dropdown into the admin
     # "language_chooser": True,
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
 }
