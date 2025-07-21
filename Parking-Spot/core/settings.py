@@ -310,3 +310,5 @@ SPECTACULAR_SETTINGS = {
     # 'SERVE_INCLUDE_SCHEMA': False,
     # OTHER SETTINGS
 }
+
+CELERY_BROKER_URL = 'amqp://guest:quest@rabbitmq:5672//'
