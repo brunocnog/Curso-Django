@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'parking-spot',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'parkiparking_db',
+        'HOST': 'parking_db',
         'PORT': '5432',
     }
 }
