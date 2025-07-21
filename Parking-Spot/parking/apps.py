@@ -7,4 +7,4 @@ class ParkingConfig(AppConfig):
     verbose_name = 'Vagas'
 
     def ready(self):
-        import parking.signals
+        import parking.signals # noqa F401

@@ -1,7 +1,7 @@
 from rest_framework.permissions import DjangoModelPermissions
 from rest_framework import viewsets
 
-from core.permissions import IsOwnerOfVehicleOrRecord
+# from core.permissions import IsOwnerOfVehicleOrRecord
 from parking.models import ParkingSpot, ParkingRecord
 from parking.serializers import ParkingSpotSerializer, ParkingRecordSerializer
 
@@ -21,4 +21,4 @@ class ParkingRecordViewSet(viewsets.ModelViewSet):
         user = self.request.user
         if user.is_staff:
             return ParkingRecord.objects.all()
-        return ParkingRecord.objects.filter(vehicle__owner__user = user)
+        return ParkingRecord.objects.filter(vehicle__owner__user=user)
