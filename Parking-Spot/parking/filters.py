@@ -5,7 +5,7 @@ from parking.models import ParkingRecord, ParkingSpot
 
 class ParkingSpotFiltersClass(AutoRQLFilterClass):
     MODEL = ParkingSpot
-    
+
 
 class ParkingRecordFiltersClass(AutoRQLFilterClass):
     MODEL = ParkingRecord
