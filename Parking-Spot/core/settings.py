@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #
     'rest_framework',
     'rest_framework_simplejwt',
+    'drf_spectacular',
     #
     'authentication',
     'customers',
@@ -295,5 +296,14 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
-    'DEFAULT_FILTER_BACKENDS': ['dj_rql.drf.RQLFilterBackend']
+    'DEFAULT_FILTER_BACKENDS': ['dj_rql.drf.RQLFilterBackend'],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Parking Service API',
+    'DESCRIPTION': 'API do Sistema Parking Service',
+    'VERSION': '1.0.0',
+    # 'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
 }
