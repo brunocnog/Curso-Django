@@ -311,4 +311,4 @@ SPECTACULAR_SETTINGS = {
     # OTHER SETTINGS
 }
 
-CELERY_BROKER_URL = 'amqp://guest:quest@rabbitmq:5672//'
+CELERY_BROKER_URL = 'amqp://guest:guest@rabbitmq:5672//'
