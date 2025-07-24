@@ -1,8 +1,8 @@
 # 🚗 Sistema e API de Estacionamento com Python e Django do Zero
 
-Este repositório documenta minha participação e aprendizado prático baseado na excelente série de lives da [PycodeBr](https://www.youtube.com/@pycodebr), onde é construído do zero um **Sistema e API para Estacionamento** usando **Python** e **Django**.
+Este repositório documenta minha participação e aprendizado prático baseado na série de lives da [PycodeBr](https://www.youtube.com/@pycodebr), onde foi construído do zero um **Sistema e API para Estacionamento** usando **Python** e **Django**.
 
-O projeto visa aplicar boas práticas de desenvolvimento backend com Django, criar APIs RESTful e integrar serviços externos como envio de e-mail, WhatsApp e tarefas assíncronas.
+O projeto visa aplicar boas práticas de desenvolvimento backend com Django, criar APIs RESTful e integrar serviços externos.
 
 ---
 
@@ -23,12 +23,12 @@ Sistema de gestão de estacionamento com painel administrativo, API RESTful, aut
 
 - Controle de entrada e saída de veículos
 - Consulta de dados por placa
-- Notificações por e-mail e WhatsApp
 - Autenticação JWT e filtros avançados com RQL
 - Painel administrativo com Django Jazzmin
 - Execução assíncrona com Celery + RabbitMQ
 - Banco de dados PostgreSQL
 - Documentação automática da API com Swagger
+- Containerização do Projeto
 
 📋 Requisitos funcionais detalhados:  
 👉 [Ver no Whimsical](https://whimsical.com/parking-service-SSoifu29a1MVLAmLAPMk2a)
@@ -61,9 +61,7 @@ Sistema de gestão de estacionamento com painel administrativo, API RESTful, aut
 ### 🔹 Parte 4 – Tarefas assíncronas e automações
 - **Celery + RabbitMQ**: filas para execução assíncrona de tarefas.
 - **Tasks para auto completar dados do veículo** a partir da placa.
-- Integrações com:
-  - **EvolutionAPI** (consulta de placas)
-  - **SMTP** (envio de e-mails)
+  - Criado um site estático em https://favorite-pig.static.domains/carros/ a fim de permitir realizar Web Scraping utilizando o Playwright.
 
 ---
 
@@ -73,6 +71,7 @@ Sistema de gestão de estacionamento com painel administrativo, API RESTful, aut
 - **Django REST Framework (DRF)**: criação de APIs RESTful com suporte a autenticação, filtros, validações e viewsets.
 - **Django Jazzmin**: tema moderno para o painel admin do Django.
 - **Celery**: tarefas assíncronas e agendamento.
+- **Playwright**: ferramente de automação para Web Scraping.
 - **RabbitMQ**: broker de mensagens utilizado pelo Celery.
 - **PostgreSQL**: banco de dados relacional avançado e open source.
 - **drf-spectacular**: documentação de APIs com suporte OpenAPI/Swagger.
@@ -98,5 +97,7 @@ Confira os cursos oferecidos pela PycodeBr:
 
 ## 🚧 Status
 
-Este projeto está em andamento. Pretendo aplicar e adaptar os conhecimentos adquiridos em novos módulos, testando variações e funcionalidades mais avançadas.
+Este projeto foi finalizado buscando ser o mais fiel possível a que foi aprensentado nas lives da PycodeBr.
+
+Pretendo aplicar e adaptar os conhecimentos adquiridos em novos módulos, testando variações e funcionalidades mais avançadas.
 
