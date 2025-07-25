@@ -32,12 +32,12 @@ Este repositório conterá:
 - ✅ Tópicos estudados e suas aplicações
 - ✅ Anotações e reflexões pessoais durante o aprendizado
 
-### Projetos Criados
+## Projetos Criados
 
 | Projeto         | Descrição                                               | Link              |
 |-----------------|---------------------------------------------------------|-------------------|
 | Projeto Piloto  | Primeiro projeto Django seguindo passo a passo do curso| [W3Schools](./W3Schools/) |
-| Parking Service | Sistema e API de Estacionamento com Python e Django do Zero| [Parking-Spot](./Parking-Spot/) |
+| Parking Service | Sistema e API de Estacionamento com Python e Django| [Parking-Spot](./Parking-Spot/) |
 
 ---
 
