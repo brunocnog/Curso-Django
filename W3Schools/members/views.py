@@ -10,6 +10,7 @@ from .models import Member
 #   template = loader.get_template('myfirst.html')
 #   return HttpResponse(template.render())
 
+
 def members(request):
     mymembers = Member.objects.all().values()
     template = loader.get_template('all_members.html')
@@ -18,14 +19,16 @@ def members(request):
     }
     return HttpResponse(template.render(context, request))
 
+
 def details(request, slug):
-  mymember = Member.objects.get(slug=slug)
-  template = loader.get_template('details.html')
-  context = {
-    'mymember': mymember,
-  }
-  return HttpResponse(template.render(context, request))
+    mymember = Member.objects.get(slug=slug)
+    template = loader.get_template('details.html')
+    context = {
+        'mymember': mymember,
+    }
+    return HttpResponse(template.render(context, request))
+
 
 def main(request):
-  template = loader.get_template('main.html')
-  return HttpResponse(template.render())
+    template = loader.get_template('main.html')
+    return HttpResponse(template.render())
