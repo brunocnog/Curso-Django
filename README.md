@@ -1,6 +1,8 @@
 # Estudando Django
 
-Este repositório tem como objetivo documentar minha jornada de aprendizado com o framework **Django**. O **Projeto Piloto** será baseado no curso gratuito oferecido pela [W3Schools](https://www.w3schools.com/django/index.php).
+Este repositório tem como objetivo documentar minha jornada de aprendizado com o framework **Django**. Iniciei pelo curso gratuito oferecido pela [W3Schools](https://www.w3schools.com/django/index.php) o qual será **Projeto Piloto** e sevirá de comparação para os demais projetos.
+
+Outros projetos aqui documentados fazem parte do curso **Django Master** oferecido pela [PycodeBr](https://pycodebr.com.br/) e do aprendizado prático baseado na série de lives do [Canal do Youtube da Pycode] (https://www.youtube.com/@pycodebr).
 
 ---
 
@@ -37,6 +39,7 @@ Este repositório conterá:
 | Projeto         | Descrição                                               | Link              |
 |-----------------|---------------------------------------------------------|-------------------|
 | Projeto Piloto  | Primeiro projeto Django seguindo passo a passo do curso| [W3Schools](./W3Schools/) |
+| Projeto Carros | Primeiro projeto do curso Django Master. Sem nenhuma alteração| [Carros](./carros/) |
 | Parking Service | Sistema e API de Estacionamento com Python e Django| [Parking-Spot](./Parking-Spot/) |
 
 ---
