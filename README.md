@@ -39,7 +39,7 @@ Este repositório conterá:
 | Projeto         | Descrição                                               | Link              |
 |-----------------|---------------------------------------------------------|-------------------|
 | Projeto Piloto  | Primeiro projeto Django seguindo passo a passo do curso| [W3Schools](./W3Schools/) |
-| Projeto Carros | Primeiro projeto do curso Django Master. Sem nenhuma alteração| [Carros](./carros/) |
+| Projeto Carros | Primeiro projeto do curso Django Master. Sem nenhuma alteração| [Carros](https://github.com/brunocnog/carros/) |
 | Parking Service | Sistema e API de Estacionamento com Python e Django| [Parking-Spot](./Parking-Spot/) |
 
 ---
